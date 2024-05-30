@@ -18,7 +18,7 @@
 
               <a class="navbar-link" href="{{ route('home')}}">
                 {{-- <img src="{{ url("asset/img/logo.png")}}" alt="Logo"> --}}
-                <img src="asset/img/logo.png" alt="Logo" class="h-30px">
+                <img src="asset/img/logo-white.png" alt="Logo-white" class="h-30px">
               </a>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,10 +45,25 @@
                  
                 </ul>
 
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-flex w-100 me-4 my-2 my-lg-0" role="search" action="#" method="GET">
+                  <div class="input-group">
+
+                    <span class="input-group-text bg-white border-end-0"><img src="{{ url('asset/img/magnifier.png') }}" alt="Search"></span>
+
+                    <input class="form-control border-start-0 ps-0" type="search" placeholder="Search" aria-label="Search" name="" value="">
+                   
+                  </div>
                 </form>
+
+                <ul>
+                  <li class="nav-item my-auto">
+                    <a href="#" class="new-link text-nowrap">Log In</a>
+                  </li>
+                  
+                  <li class="nav-item ps-1 py-0">
+                    <a href="#" class="btn btn-primary-white">Sign Up</a>
+                  </li>
+                </ul>
 
               </div>
             </div>
